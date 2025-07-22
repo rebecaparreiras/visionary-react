@@ -1,0 +1,93 @@
+/* Hero/Banner */
+.bannerImage {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Section Title */
+.homeTitle {
+    margin: 3rem 3rem 1rem 3rem;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+}
+
+/* Product Banners */
+.homeProductBanners {
+    margin-top: 3rem;
+}
+
+.homeProductBanners a {
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+}
+
+.productBannerGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.productBanner {
+    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    /* background-image attached on Home.jsx */
+    background-size: cover;  
+    background-position: center;
+    /* background-position could also be: */
+    /* background-position: top right;    */
+    /* background-position: 20px 50%;     */
+}
+
+.bannerTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerTitle h2 {
+    padding: 1rem;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-600);
+    font-weight: var(--fw-bold);
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Tablets */
+@media (max-width: 1100px) {
+    .productBannerGrid {
+        /* grid-template-columns: 1fr 1fr;
+        align-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .productBanner {
+        background-position: center;
+        width: 100%;
+    }
+
+    .bannerTitle {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .reverseOrder .productBanner {
+        order: 1;
+    }
+
+    .reverseOrder .bannerTitle {
+        order: 2;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+}

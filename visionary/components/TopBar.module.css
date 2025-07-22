@@ -1,0 +1,42 @@
+.topBar {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-medium);
+  overflow: hidden;
+  height: 2.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Tablets */
+@media (max-width: 1100px) {
+  .topBar {
+    height: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+}

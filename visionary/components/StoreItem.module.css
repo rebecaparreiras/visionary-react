@@ -1,0 +1,19 @@
+.itemInfo {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; 
+}
+
+.itemName {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-bold);
+}
+
+.itemOpeningHours {
+    background: none;
+    border: none;
+    font-size: var(--fs-200);
+    font-weight: var(--fw-medium);
+}
