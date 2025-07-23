@@ -153,9 +153,14 @@ input:focus {
 
 /* Tablets */
 @media (max-width: 1100px) {
+  /* General Styling */
+  .scrolledHeader {
+    background-color: var(--clr-neutral-100);
+  }
+
   .navWrapper {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 1.5rem;
+    padding: 0 3rem;
   }
 
   .navLinks {
@@ -192,12 +197,12 @@ input:focus {
 
   .menuOpen {
     width: 40px; 
-    height: 15px; 
+    height: 10px; 
     display: flex; 
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 5;
   }
 
   .hamburger {
@@ -233,33 +238,9 @@ input:focus {
 
 /* Mobile */
 @media (max-width: 576px) {
-  .navLogo {
-    font-size: var(--fs-500);
-  }
-
-  .navIcons {
-    font-size: var(--fs-200);
-  }
-
-  .navIcons .num {
-    right: 16px;
-    line-height: 1rem;
-    width: 15px;
-    height: 15px;
-    background-color: var(--clr-neutral-900);
-    font-size: var(--fs-100);
-  } 
-  
-
   /* Icon Menu */
   .menuOpen {
     width: 25px; 
-    height: 15px; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1001;
   }
 
   .hamburger {

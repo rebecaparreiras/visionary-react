@@ -1,3 +1,4 @@
+/* General styling */
 .sidecart {
     position: fixed;
     top: 0;
@@ -21,6 +22,8 @@
     position: relative;
 }
 
+
+/* Sidecart header */
 .cartHeader {
     padding: 0.78rem 1.5rem;
     border-bottom: 1px solid var(--clr-neutral-600);
@@ -54,16 +57,56 @@
     cursor: pointer;
 }
 
-.cartItems {
+
+/* Sidecart products */
+.cartItem {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    padding-left: 1.5rem;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: var(--fs-200);
+    padding: 0 1.5rem;
     border-bottom: solid 1px var(--clr-neutral-600);
 }
 
+.cartItem span {
+    font-weight: var(--fw-medium);
+    justify-self: center;
+    padding-left: 2rem;
+}
+
+.cartItemImage {
+    justify-self: start;
+}
+
+.quantityControls {
+    justify-self: end;
+}
+
+.quantityControls button {
+    background-color: transparent;
+    border: none;
+    font-size: var(--fs-400);
+    padding: 0 0.2rem;
+    cursor: pointer;
+}
+
+.quantityControls span {
+    justify-self: end;
+    padding: 0 0.3rem;
+}
+
+.removeButton {
+    justify-self: end;
+    background-color: transparent;
+    border: none;
+    font-size: var(--fs-500);
+    cursor: pointer;
+}
+
+
+/* Sidecart footer */
 .cartActions {
     padding: 1rem 2rem;
     display: flex;

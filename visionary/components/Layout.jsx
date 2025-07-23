@@ -73,10 +73,7 @@ const Layout = ({ isSidecartOpen, toggleSidecart, closeSidecart, openSidecart })
         closeMenu={toggleMenu} 
         scrolled={scrolled}
       />
-      <Sidecart 
-        isOpen={isSidecartOpen} 
-        closeSidecart={closeSidecart} 
-      />
+      <Sidecart />
       <main>
         <Outlet context={{ openSidecart }} />
       </main>

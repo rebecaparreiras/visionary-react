@@ -1,29 +1,78 @@
-// import { useCart } from '../context/CartContext';
+import { Link } from 'react-router-dom';
+import styles from './Checkout.module.css';
+
+import useCart from '../context/useCart';
+
+import ProductCarousel from '../components/ProductCarousel.jsx';
 
 const Checkout = () => {
-  // const { cartItems, subtotal } = useCart();
+  const { cartItems, subtotal, updateQuantity, removeFromCart } = useCart();
 
   return (
-    <div>
-      <h1>Resumo da Compra</h1>
-      {/* {cartItems.length === 0 ? (
-          <p>O carrinho está vazio.</p>
+    <div className={styles.checkoutContainer}>
+      {/* Empty cart */}
+      {cartItems.length === 0 ? (
+        <p className={styles.checkoutEmpty}>Your cart is empty.</p>
       ) : (
-          <div>
-              {cartItems.map(item => (
-                  <div key={item.id} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                      <img src={item.images.main} alt={item.name} width={50} />
-                      <span style={{ margin: '0 10px' }}>{item.name}</span>
-                      <span style={{ margin: '0 10px' }}>Quantidade: {item.quantity}</span>
-                      <span style={{ margin: '0 10px' }}>${item.price.toFixed(2)}</span>
-                  </div>
-              ))}
-              <h3>Subtotal: ${subtotal.toFixed(2)}</h3>
-              <button>Finalizar Compra</button>
+        <div className={styles.checkoutItemContainer}>
+          {/* Checkout products */}
+          <h1>Checkout</h1>
+
+          {cartItems.map((item) => (
+            <div key={item.id} className={styles.checkoutItem}>
+              {/* Item image */}
+              <img src={item.images.main} alt={item.name} />
+
+              {/* Item name */}
+              <p className={styles.itemName}>{item.name}</p>
+
+              {/* Item quantity */}
+              <div className={styles.quantityControls}>
+                  <button 
+                      onClick={() => updateQuantity(item.id, -1)} 
+                      disabled={item.quantity === 1}
+                  >-</button>
+
+                  <span>{item.quantity}</span>
+
+                  <button onClick={() => updateQuantity(item.id, 1)}
+                  >+</button>
+              </div>
+
+              {/* Item price */}
+              <p className={styles.itemPrice}>${(item.price * item.quantity).toFixed(0)}</p>
+              
+              {/* Item removal */}
+              <button onClick={() => removeFromCart(item.id)} 
+              className={styles.removeButton}
+              >&times;</button>
+            </div>
+          ))}
+
+          <div className={styles.checkoutInfo}>
+            {/* Subtotal */}
+            <div className={styles.checkoutSubtotal}>
+              <h3>Total: ${subtotal.toFixed(0)}</h3>
+            </div>
+
+            {/* Checkout button */}
+            <div className={styles.checkoutBtn}>
+              <Link to="/login">
+                <button>Checkout</button>
+              </Link>
+            </div>
           </div>
-      )} */}
+        </div>
+      )}
+
+      {/* Carousel title */}
+      <h1 className={styles.carouselTitle}>You may also like</h1>
+
+      {/* Product carousel */}
+      <ProductCarousel />
     </div>
   );
 };
 
 export default Checkout;
+

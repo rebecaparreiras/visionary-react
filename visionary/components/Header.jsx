@@ -2,10 +2,16 @@ import { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 
-const Header = ({ toggleMenu, toggleSidecart, isMenuMobileOpen, scrolled }) => {
+import useCart from '../context/useCart';
+import useSidecart from '../context/useSidecart';
+
+const Header = ({ toggleMenu, isMenuMobileOpen, scrolled }) => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [isAtTop, setIsAtTop] = useState(true);
+
+  const { cartItems } = useCart();
+  const { toggleSidecart } = useSidecart();
 
   useEffect(() => {
     let scrollTimeout;
@@ -52,6 +58,8 @@ const Header = ({ toggleMenu, toggleSidecart, isMenuMobileOpen, scrolled }) => {
       clearTimeout(scrollTimeout);
     };
   }, [isHeaderVisible]);
+
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <header 
@@ -149,7 +157,7 @@ const Header = ({ toggleMenu, toggleSidecart, isMenuMobileOpen, scrolled }) => {
                   role="button" 
                   tabIndex={0}
                 >
-                  0
+                  {totalItems}
                 </span>
               </li>
             </ul>

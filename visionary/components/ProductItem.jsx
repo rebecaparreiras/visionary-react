@@ -1,9 +1,12 @@
 import styles from './ProductItem.module.css';
 import { Link } from 'react-router-dom';
-import useCart from '../context/useCart';
 
-const ProductItem = ({ product, openSidecart }) => {
+import useCart from '../context/useCart';
+import useSidecart from '../context/useSidecart';
+
+const ProductItem = ({ product }) => {
     const { addToCart } = useCart();
+    const { openSidecart } = useSidecart();
 
     const handleAddToCart = () => {
         addToCart(product);
