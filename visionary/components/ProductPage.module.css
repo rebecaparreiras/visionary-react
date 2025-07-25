@@ -1,4 +1,4 @@
-/* GENERAL */
+/* General styling */
 .productPage {
     width: 100%;
     overflow-x: hidden;
@@ -16,7 +16,7 @@
 }
 
 
-/* PRODUCT CAROUSEL */
+/* Product carousel */
 .productCarousel {
     width: 100%;
     max-width: 700px; 
@@ -43,7 +43,7 @@
 }
 
 
-/* PRODUCT DETAILS */
+/* Product details */
 .productDetails {
     justify-self: left;
     width: 400px;
@@ -85,7 +85,7 @@
 }
 
 
-/* PRODUCT SPECIFICS */
+/* Product specifics */
 .productSpecifics {
     list-style: none;
     margin-top: 1.75rem;
@@ -99,10 +99,39 @@
 }
 
 
-
-/* PRODUCT GRID */
+/* Product grid */
 .title {
     margin: 0 3rem 1rem 3rem;
     font-size: var(--fs-400);
     font-weight: var(--fw-bold);
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Tablets */
+@media (max-width: 1280px) {
+    /* General styling */
+    .productInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Product details */
+    .productDetails {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1100px) {
+
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
 }

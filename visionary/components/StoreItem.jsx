@@ -3,6 +3,7 @@ import styles from './StoreItem.module.css';
 const StoreItem = ({ store }) => {
     return (
         <div className={styles.item}>
+            {/* Store image */}
             <div className={styles.itemImage}>
                 <img 
                     src={store.image} 
@@ -10,6 +11,7 @@ const StoreItem = ({ store }) => {
                 />
             </div>
 
+            {/* Store info */}
             <div className={styles.itemInfo}>
                 <span className={styles.itemName}>
                     {store.name}

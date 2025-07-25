@@ -16,6 +16,7 @@ const ProductItem = ({ product }) => {
     return (
         <div className={styles.item}>
             <div className={styles.itemImage}>
+                {/* Product images */}
                 <Link to={`/products/${product.id}`}>
                     <img 
                         src={product.images.main} 
@@ -28,18 +29,20 @@ const ProductItem = ({ product }) => {
                         className={styles.hoverImage}
                     />
                 </Link>
+
+                {/* 'Add to cart' icon */}
+                <div className={styles.itemAddToCart}>
+                    <span 
+                        onClick={handleAddToCart} 
+                        className={styles.cartIcon} 
+                        role="button" 
+                    >
+                        <i className="ri-shopping-bag-line"></i>
+                    </span>
+                </div>
             </div>
 
-            <div className={styles.itemAddToCart}>
-                <span 
-                    onClick={handleAddToCart} 
-                    className={styles.cartIcon} 
-                    role="button" 
-                >
-                    <i className="ri-shopping-bag-line"></i>
-                </span>
-            </div>
-
+            {/* Product info */}
             <div className={styles.itemInfo}>
                 <span className={styles.itemName}>
                     {product.name}

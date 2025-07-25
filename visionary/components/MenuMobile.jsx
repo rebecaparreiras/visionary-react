@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import styles from './MenuMobile.module.css';
 
 const MenuMobile = ({ isOpen, closeMenu, scrolled }) => {

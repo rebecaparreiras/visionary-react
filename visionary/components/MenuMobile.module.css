@@ -5,7 +5,9 @@
   height: 21%; 
   width: 100%;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out, top 0.3s ease-in-out; 
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out; 
   z-index: 5; 
   display: flex;
   justify-content: top;
@@ -19,6 +21,8 @@
 
 .menuMobile.open {
   opacity: 1; 
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .scrolledMobileMenu {

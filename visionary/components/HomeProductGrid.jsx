@@ -1,7 +1,7 @@
 import styles from './HomeProductGrid.module.css';
 import products from '../src/data/products'; 
+
 import ProductItem from './ProductItem';
-// import { Link } from 'react-router-dom'
 
 const HomeProductGrid = () => {
     return (
@@ -16,7 +16,7 @@ const HomeProductGrid = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default HomeProductGrid;

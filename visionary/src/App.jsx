@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 
 import Layout from '../components/Layout';
 
@@ -32,36 +33,38 @@ function App() {
   };
 
   return (
-    <Router>
-      {/* Routes */}
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Layout
-              isSidecartOpen={isSidecartOpen}
-              toggleSidecart={toggleSidecart}
-              openSidecart={openSidecart}
-              closeSidecart={closeSidecart}
-              toggleMenu={handleToggleMenu}
-              isMobileMenuOpen={isMobileMenuOpen}
-            />
-          }
-        >
-          <Route index element={<Home />} />
-          <Route path="glasses" element={<Glasses />} />
-          <Route path="sunglasses" element={<Sunglasses />} />
-          <Route path="stores" element={<Stores />} />
-          <Route path="checkout" element={<Checkout />} />
-          <Route path="login" element={<Login />} />
-          <Route path="products/:id" element={<ProductDetails />} />
-        </Route>
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        {/* Routes */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout
+                isSidecartOpen={isSidecartOpen}
+                toggleSidecart={toggleSidecart}
+                openSidecart={openSidecart}
+                closeSidecart={closeSidecart}
+                toggleMenu={handleToggleMenu}
+                isMobileMenuOpen={isMobileMenuOpen}
+              />
+            }
+          >
+            <Route index element={<Home />} />
+            <Route path="glasses" element={<Glasses />} />
+            <Route path="sunglasses" element={<Sunglasses />} />
+            <Route path="stores" element={<Stores />} />
+            <Route path="checkout" element={<Checkout />} />
+            <Route path="login" element={<Login />} />
+            <Route path="products/:id" element={<ProductDetails />} />
+          </Route>
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 }
 
-export default App
+export default App;
 
 
 

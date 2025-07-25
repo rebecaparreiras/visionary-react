@@ -13,6 +13,7 @@ const Sidecart = () => {
     return (
         <div className={`${styles.sidecart} ${isSidecartOpen ? styles.sidecartActive : ''}`}>
             <div className={styles.cartContent}>
+                {/* Sidecart header */}
                 <div className={styles.cartHeader}>
                     <span className={styles.num}>
                         {totalItems}
@@ -28,7 +29,7 @@ const Sidecart = () => {
                 </div>
 
                 <div className={styles.cartItemsContainer}>
-                    {/* products */}
+                    {/* Products */}
                     {cartItems.map(item => (
                         <div key={item.id} className={styles.cartItem}>
                             <img src={item.images.main} alt={item.name} className={styles.cartItemImage} />
@@ -46,7 +47,8 @@ const Sidecart = () => {
                         </div>
                     ))}
                 </div>
-
+                
+                {/* Sidecart footer */}
                 <div className={styles.cartActions}>
                     <div className={styles.cartSubtotal}>
                         <p>Subtotal:</p>
@@ -61,7 +63,7 @@ const Sidecart = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Sidecart;

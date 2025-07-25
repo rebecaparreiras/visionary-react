@@ -1,5 +1,7 @@
 import styles from './ProductGrid.module.css';
+
 import products from '../src/data/products'; 
+
 import ProductItem from './ProductItem';
 
 const ProductGrid = ({ category, openSidecart }) => {

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import styles from './TopBar.module.css';
 
 const messages = [

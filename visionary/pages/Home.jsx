@@ -1,6 +1,7 @@
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 import { useOutletContext } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 import HomeProductGrid from '../components/HomeProductGrid.jsx';
 import ProductCarousel from '../components/ProductCarousel.jsx';
@@ -12,60 +13,67 @@ const Home = () => {
     const { openSidecart } = useOutletContext();
 
     return (
-        <div className={styles.home}>
-            <div className={styles.container}>
-                {/* HERO BANNER */}
-                <div className={styles.homeBanner}>
-                    <img 
-                        src="../src/assets/images/home-banner-06.jpg" 
-                        alt="Female model wearing glasses" 
-                        className={styles.bannerImage}
-                    />
-                </div>
+        <>
+            <Helmet>
+                <title>Visionary | Glasses & Sunglasses</title>
+                <meta name="description" content="See clearly, live boldly." />
+            </Helmet>
 
-                {/* TITLE */}
-                <div className={styles.homeTitle}>
-                    <h2>Best-sellers</h2>
-                </div>
-
-                {/* PRODUCT CAROUSEL */}
-                <ProductCarousel openSidecart={openSidecart} />
-
-                {/* PRODUCT BANNERS */}
-                <div className={styles.homeProductBanners}>
-                    
-                    <div className={styles.productBannerGrid}>
-                        <div 
-                            className={styles.productBanner} 
-                            style={{ backgroundImage: `url(${glassesImage})` }}
-                        ></div>
-
-                        <Link to="/glasses">
-                            <div className={styles.bannerTitle}>
-                                <h2>Glasses →</h2>
-                            </div>
-                        </Link>
+            <div className={styles.home}>
+                <div className={styles.container}>
+                    {/* Hero banner */}
+                    <div className={styles.homeBanner}>
+                        <img 
+                            src="../src/assets/images/home-banner-06.jpg" 
+                            alt="Female model wearing glasses" 
+                            className={styles.bannerImage}
+                        />
                     </div>
 
-                    <div className={`${styles.productBannerGrid} ${styles.reverseOrder}`}>
-                        <Link to="/sunglasses">
-                            <div className={styles.bannerTitle}>
-                                <h2>Sunglasses →</h2>
-                            </div>
-                        </Link>
+                    {/* Title */}
+                    <div className={styles.homeTitle}>
+                        <h2>Best-sellers</h2>
+                    </div>
+
+                    {/* Product carousel */}
+                    <ProductCarousel openSidecart={openSidecart} />
+
+                    {/* Product banners */}
+                    <div className={styles.homeProductBanners}>
                         
-                        <div 
-                            className={styles.productBanner} 
-                            style={{ backgroundImage: `url(${sunglassesImage})` }}
-                        ></div>
-                    </div>
-                </div>
+                        <div className={styles.productBannerGrid}>
+                            <div 
+                                className={styles.productBanner} 
+                                style={{ backgroundImage: `url(${glassesImage})` }}
+                            ></div>
 
-                {/* HOME PRODUCT GRID */}
-                <HomeProductGrid openSidecart={openSidecart} />
+                            <Link to="/glasses">
+                                <div className={styles.bannerTitle}>
+                                    <h2>Glasses →</h2>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className={`${styles.productBannerGrid} ${styles.reverseOrder}`}>
+                            <Link to="/sunglasses">
+                                <div className={styles.bannerTitle}>
+                                    <h2>Sunglasses →</h2>
+                                </div>
+                            </Link>
+                            
+                            <div 
+                                className={styles.productBanner} 
+                                style={{ backgroundImage: `url(${sunglassesImage})` }}
+                            ></div>
+                        </div>
+                    </div>
+
+                    {/* Home product grid */}
+                    <HomeProductGrid openSidecart={openSidecart} />
+                </div>
             </div>
-        </div>
-    )
-}
+        </>
+    );
+};
 
 export default Home;
