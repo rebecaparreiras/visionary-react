@@ -4,6 +4,10 @@ Visionary é um site de e-commerce de venda de óculos de grau e de sol, desenvo
 
 Neste projeto, o meu objetivo foi aprender React.js com foco nas soluções mais atuais e utilizadas pelas empresas para o desenvolvimento front-end de seus sites.  
 
+<p align="center">
+  <img src="readme-resources/visionary-react-gif-01.gif" alt="Demonstração do site">
+</p>
+
 <br>
 
 ## Uso de bibliotecas
@@ -14,6 +18,10 @@ Foi essencial para estruturar a navegação entre páginas sem recarregar a apli
 
 ### Swiper<br>
 Usei o Swiper para criar um carrossel de produtos responsivo (/components/ProductCarousel.jsx) e com boa performance, facilitando a exibição interativa de produtos tanto para a versão desktop quanto mobile, uma vez que o Swiper é facilmente personalizável.
+
+<p align="center">
+  <img src="readme-resources/visionary-react-gif-02.gif" alt="Demonstração do Swiper">
+</p>
 
 ### react-helmet-async<br>
 Permite gerenciar dinamicamente o <head> do documento, como título da página e metadados. Isso é importante tanto para SEO quanto para melhorar a acessibilidade e a usabilidade da aplicação.
@@ -35,6 +43,10 @@ Criei um array de produtos usando .map, renderizando um componente ProductItem.j
 <li><b>Gerenciamento de dados centralizado:</b> todos os dados do produto ficam em um só lugar, facilitando manutenção e manipulação;</li>
 <li><b>Identificação rápida:</b> cada produto do array tem id único, permitindo rápida identificação para manipulações, como adicionar ao carrinho.</li>
 </ul>
+
+<p align="center">
+  <img src="readme-resources/visionary-react-gif-03.gif" alt="Demonstração do product.js em uso">
+</p>
 
 ### ProductPage.jsx<br>
 ProductPage.jsx cria a página individual de cada produto. Centralizar essa lógica em um único componente permite reaproveitar o mesmo layout e estrutura para diferentes tipos de produtos, alterando apenas os dados recebidos.
