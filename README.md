@@ -24,7 +24,7 @@ Usei o Swiper para criar um carrossel de produtos responsivo (/components/Produc
 </p>
 
 ### react-helmet-async<br>
-Permite gerenciar dinamicamente o <head> do documento, como título da página e metadados. Isso é importante tanto para SEO quanto para melhorar a acessibilidade e a usabilidade da aplicação.
+Permite gerenciar dinamicamente o 'head' do documento, como título da página e metadados. Isso é importante tanto para SEO quanto para melhorar a acessibilidade e a usabilidade da aplicação.
 
 <br>
 
@@ -59,7 +59,7 @@ ProductPage.jsx cria a página individual de cada produto. Centralizar essa lóg
 </ul>
 
 ### CSS Modules<br>
-O uso de CSS Modules é uma escolha estratégica para projetos escaláveis, porque evita conflitos de estilo ao garantir que as classes CSS sejam aplicadas de forma local a cada componente. Isso me permitiu:
+Optei por usar CSS Modules, pois é uma escolha estratégica para projetos escaláveis ao evitar conflitos de estilo, uma vez que garante que as classes CSS sejam aplicadas de forma local a cada componente. Isso me permitiu:
 
 <ul>
 <li><b>Isolamento de estilos:</b> cada componente tem seus próprios estilos, sem risco de sobrescrever ou ser sobrescrito por outros;</li>
