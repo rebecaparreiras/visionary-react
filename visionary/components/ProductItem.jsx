@@ -1,5 +1,6 @@
-import styles from './ProductItem.module.css';
 import { Link } from 'react-router-dom';
+
+import styles from './ProductItem.module.css';
 
 import useCart from '../context/useCart';
 import useSidecart from '../context/useSidecart';

@@ -1,19 +1,19 @@
-import liloFront from '../assets/images/lilo-01.webp'
-import liloSide from '../assets/images/lilo-02.webp'
-import baboFront from '../assets/images/babo-01.webp'
-import baboSide from '../assets/images/babo-02.webp'
-import leeFront from '../assets/images/lee-01.webp'
-import leeSide from '../assets/images/lee-02.webp'
-import gimpoFront from '../assets/images/gimpo-01.webp'
-import gimpoSide from '../assets/images/gimpo-02.webp'
-import daliFront from '../assets/images/dali-01.webp'
-import daliSide from '../assets/images/dali-02.webp'
-import momoFront from '../assets/images/momo-01.webp'
-import momoSide from '../assets/images/momo-02.webp'
-import naruFront from '../assets/images/naru-01.webp'
-import naruSide from '../assets/images/naru-02.webp'
-import tasiFront from '../assets/images/tasi-01.webp'
-import tasiSide from '../assets/images/tasi-02.webp'
+import liloFront from '../assets/images/lilo-01.webp';
+import liloSide from '../assets/images/lilo-02.webp';
+import baboFront from '../assets/images/babo-01.webp';
+import baboSide from '../assets/images/babo-02.webp';
+import leeFront from '../assets/images/lee-01.webp';
+import leeSide from '../assets/images/lee-02.webp';
+import gimpoFront from '../assets/images/gimpo-01.webp';
+import gimpoSide from '../assets/images/gimpo-02.webp';
+import daliFront from '../assets/images/dali-01.webp';
+import daliSide from '../assets/images/dali-02.webp';
+import momoFront from '../assets/images/momo-01.webp';
+import momoSide from '../assets/images/momo-02.webp';
+import naruFront from '../assets/images/naru-01.webp';
+import naruSide from '../assets/images/naru-02.webp';
+import tasiFront from '../assets/images/tasi-01.webp';
+import tasiSide from '../assets/images/tasi-02.webp';
 
 const products = [
   {
@@ -106,4 +106,4 @@ const products = [
   },
 ];
 
-export default products
+export default products;
