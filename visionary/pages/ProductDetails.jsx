@@ -9,7 +9,7 @@ const ProductDetails = () => {
   const product = products.find(p => p.id === id);
 
   if (!product) {
-    return <p>Produto não encontrado.</p>;
+    return <p>Product not found.</p>;
   }
 
   return <ProductPage product={product} />;
