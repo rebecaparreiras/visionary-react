@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expõe a porta que a aplicação vai rodar
-EXPOSE 4173
+EXPOSE $PORT 4173
 
 # Define o comando para iniciar a aplicação
 CMD ["npm", "run", "start"]
