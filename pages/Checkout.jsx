@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Checkout.module.css';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 import useCart from '../context/useCart';
 
