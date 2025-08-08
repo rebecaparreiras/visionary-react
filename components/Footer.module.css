@@ -1,0 +1,178 @@
+/* General styling */
+.footer {
+    margin-top: 3rem;
+    background-color: var(--clr-neutral-900);
+    padding: 3rem;
+}
+
+.footerMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.evenColumns {
+    display: flex;
+    gap: 5rem;
+}
+
+.footerText {
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-200);
+}
+
+.footer h3 {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    margin: 1rem 0;
+}
+
+.footerText a {
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-light);
+    text-decoration: none;
+}
+
+.footer ul {
+    line-height: 2rem;
+}
+
+.footer p {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+}
+
+
+/* Newsletter form */
+.inputWrapper {
+    position: relative;
+    border-bottom: 1px solid var(--clr-neutral-100);
+    max-width: 500px;
+}
+
+.inputWrapper input::placeholder {
+    color: var(--clr-neutral-600);
+    padding-left: 0;
+}
+
+.inputWrapper input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 10rem 0.5rem 0.2rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--clr-neutral-600);
+    font-size: var(--fs-300);
+}
+
+.inputWrapper button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+
+/* Logo styling */
+.footerLogo {
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-900);
+    font-weight: var(--fw-light);
+    font-family: var(--ff-secondary);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+
+/* Copyright styling */
+.footerCopyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.footerCopyright p {
+    color: var(--clr-neutral-600);
+    font-size: var(--fs-200);
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Tablets */
+@media (max-width: 1100px) {
+    .footer {
+        padding: 2rem;
+    }
+
+    .footer .evenColumns {
+        gap: 3rem;
+    }
+
+    .inputWrapper {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 855px) {
+    .inputWrapper {
+        max-width: 200px;
+    }
+
+}
+
+@media (max-width: 755px) {
+    .footer {
+        padding: 2rem;
+    }
+
+    .footerMain {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer .evenColumns {
+        gap: 2.5rem;
+    }
+
+    .footerText {
+        color: var(--clr-neutral-100);
+        font-size: var(--fs-100);
+    }
+
+    .footer h3 {
+        font-size: var(--fs-100);
+        font-weight: var(--fw-bold);
+        margin: 1rem 0;
+    }
+
+    .footer p {
+        font-size: var(--fs-100);
+        font-weight: var(--fw-bold);
+    }
+
+    .inputWrapper {
+        max-width: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    /* Newsletter placeholder */
+    .inputWrapper input {
+        font-size: var(--fs-200);
+    }
+
+    /* Footer logo */
+    .footerLogo {
+        font-size: var(--fs-700);
+    }
+}

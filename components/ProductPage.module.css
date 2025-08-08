@@ -1,0 +1,137 @@
+/* General styling */
+.productPage {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.productInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 5rem 3rem;
+}
+
+
+/* Product carousel */
+.productCarousel {
+    width: 100%;
+    max-width: 700px; 
+    border: solid 1px var(--clr-neutral-600);
+    padding: 3rem;
+    justify-self: right;
+}
+
+.carouselInner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carouselInner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Product details */
+.productDetails {
+    justify-self: left;
+    width: 400px;
+}
+
+.productName {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.75rem;
+}
+
+.productPrice {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-medium);
+}
+
+.productDescription {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-medium);
+    border-bottom: solid 1px var(--clr-neutral-600);
+    padding: 2rem 0;
+}
+
+.productButton {
+    background-color: transparent;
+    border: solid 1px var(--clr-neutral-600);
+    font-size: var(--fs-200);
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.productButton:hover {
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+}
+
+
+/* Product specifics */
+.productSpecifics {
+    list-style: none;
+    margin-top: 1.75rem;
+}
+
+.productSpecifics li {
+    font-size: var(--fs-100);
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Product grid */
+.title {
+    margin: 0 3rem 1rem 3rem;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Tablets */
+@media (max-width: 1280px) {
+    /* General styling */
+    .productInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Product details */
+    .productDetails {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1100px) {
+
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+}
