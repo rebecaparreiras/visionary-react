@@ -7,4 +7,5 @@ export default defineConfig({
     host: true,
     port: 4173,
     allowedHosts: ['visionary-react-production.up.railway.app']
+  }
 });
