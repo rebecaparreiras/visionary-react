@@ -1,7 +1,7 @@
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 import { useOutletContext } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 import HomeProductGrid from '../components/HomeProductGrid.jsx';
 import ProductCarousel from '../components/ProductCarousel.jsx';

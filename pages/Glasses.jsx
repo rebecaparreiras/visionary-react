@@ -1,5 +1,5 @@
 import styles from './ProductList.module.css';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 import ProductGrid from '../components/ProductGrid';
 
