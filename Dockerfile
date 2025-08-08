@@ -1,5 +1,5 @@
-# Usa a imagem base do Node.js
-FROM node:18-alpine
+# Usa a imagem base do Node.js que usa a biblioteca GNU C
+FROM node:18
 
 # Define o diretório de trabalho dentro do contêiner
 WORKDIR /app
