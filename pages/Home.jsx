@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import HomeProductGrid from '../components/HomeProductGrid.jsx';
 import ProductCarousel from '../components/ProductCarousel.jsx';
 
+import homeBannerImage from '../src/assets/images/home-banner-06.jpg';
 import glassesImage from '../src/assets/images/banner-glasses.jpg';
 import sunglassesImage from '../src/assets/images/banner-sunglasses.jpg';
 
@@ -24,7 +25,7 @@ const Home = () => {
                     {/* Hero banner */}
                     <div className={styles.homeBanner}>
                         <img 
-                            src="../src/assets/images/home-banner-06.jpg" 
+                            src={homeBannerImage} 
                             alt="Female model wearing glasses" 
                             className={styles.bannerImage}
                         />
