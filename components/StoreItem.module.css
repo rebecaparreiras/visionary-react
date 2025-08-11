@@ -1,3 +1,4 @@
+/* General styling */
 .itemInfo {
     padding: 0.5rem;
     display: flex;
@@ -16,4 +17,22 @@
     border: none;
     font-size: var(--fs-200);
     font-weight: var(--fw-medium);
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Mobile */
+@media (max-width: 576px) {
+    /* Product info */
+    .itemName {
+        font-size: var(--fs-100);
+        font-weight: var(--fw-medium);
+    }
+
+    .itemPrice {
+        font-size: var(--fs-100);
+    }
 }

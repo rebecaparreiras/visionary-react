@@ -91,3 +91,21 @@
 .cartIcon i:hover {
     color: var(--clr-neutral-600);
 }
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Mobile */
+@media (max-width: 576px) {
+    /* Product info */
+    .itemName {
+        font-size: var(--fs-100);
+        font-weight: var(--fw-medium);
+    }
+
+    .itemPrice {
+        font-size: var(--fs-100);
+    }
+}

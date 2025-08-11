@@ -11,6 +11,17 @@
 /*  ../src/styles/global.css   */
 
 
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Mobile */
+@media (max-width: 576px) {
+  .productCarousel {
+    padding: 0rem 1rem; 
+  }
+}
+
 
 
 

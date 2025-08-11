@@ -4,3 +4,14 @@
     gap: 1rem;
     margin: 3rem;
 }
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Mobile */
+@media (max-width: 576px) {
+    .itemsGrid {
+        margin: 1rem;
+    }
+}

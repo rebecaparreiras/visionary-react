@@ -55,9 +55,14 @@
 
 /* Mobile */
 @media (max-width: 576px) {
-    .mobileNavItem a,
-    .mobileCart { 
-        font-size: var(--fs-300);
-        line-height: 2rem;
-    }
+  .menuMobile {
+    height: 25%; 
+      padding: 1.75rem 3rem; 
+  }
+
+  .mobileNavItem a,
+  .mobileCart { 
+    font-size: var(--fs-200);
+    line-height: 1rem;
+  }
 }

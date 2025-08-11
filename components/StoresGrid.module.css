@@ -1,6 +1,20 @@
+/* General styling */
 .itemsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 1rem;
     margin: 0 3rem 3rem 3rem;
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Mobile */
+@media (max-width: 576px) {
+    .itemsGrid {
+        gap: 2rem;
+        margin: 0 1rem;
+    }
 }

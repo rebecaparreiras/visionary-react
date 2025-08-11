@@ -1,3 +1,4 @@
+/* General styling */
 .loginContainer {
   max-width: 600px;
   margin: 20rem auto;
@@ -10,6 +11,7 @@
   margin-bottom: 2rem;
 }
 
+/* Form styling */
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -42,6 +44,7 @@
     align-items: center;
 }
 
+/* Form button */
 .loginForm button {
   width: 35%;
   padding: 1rem;
@@ -52,6 +55,7 @@
   cursor: pointer;
 }
 
+/* Links */
 .loginLinks {
   display: flex;
   flex-direction: column;
@@ -70,4 +74,38 @@
 
 .registerLink {
   font-weight: var(--fw-bold);
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+/* Mobile */
+@media (max-width: 576px) {
+  /* General styling */
+  .loginContainer {
+    max-width: 600px;
+    margin: 15rem auto;
+    padding: 2rem;
+  }
+
+  .loginTitle {
+    font-size: var(--fs-300);
+    margin-bottom: 1rem;
+  }
+
+  /* Form styling */
+  .loginForm {
+    gap: 1rem;
+  }
+
+  .loginForm input {
+    font-size: var(--fs-200);
+  }
+
+  /* Form button */
+  .loginForm button {
+    font-size: var(--fs-200);
+  }
 }
