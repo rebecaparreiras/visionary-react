@@ -19,8 +19,8 @@ const ProductCarousel = () => {
                     pagination={{ clickable: true }}
                     spaceBetween={16}
                     breakpoints={{
-                        0: { slidesPerView: 2 },
-                        576: { slidesPerView: 2 },
+                        0: { slidesPerView: 1 },
+                        576: { slidesPerView: 1 },
                         1100: { slidesPerView: 3 },
                         1400: { slidesPerView: 5 },
                     }}
