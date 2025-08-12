@@ -56,7 +56,7 @@ const Sidecart = () => {
                     </div>
 
                     <div className={styles.cartButtonCheckout}>
-                        <Link to="/checkout">
+                        <Link to="/checkout" onClick={closeSidecart}>
                             <button>Checkout</button>
                         </Link>
                     </div>

@@ -130,13 +130,8 @@
 }
 
 @media (max-width: 755px) {
-    .footer {
-        padding: 2rem;
-    }
-
     .footerMain {
         flex-direction: column;
-        gap: 3rem;
     }
 
     .footer .evenColumns {
