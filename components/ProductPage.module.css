@@ -133,5 +133,38 @@
 
 /* Mobile */
 @media (max-width: 576px) {
+    /* General styling */
+    .productInfo {
+        padding: 3rem 1rem;
+        gap: 2.5rem;
+    }
+    
+    /* Product carousel */
+    .productCarousel {
+        padding: 1rem;
+    }
 
+    /* Product details */
+    .productName {
+        font-size: var(--fs-300);
+        margin-bottom: 0.5rem;
+    }
+
+    .productPrice {
+        font-size: var(--fs-200);
+    }
+
+    .productDescription {
+        font-size: var(--fs-100);
+        padding: 2rem 0;
+    }
+
+    .productButton {
+        font-size: var(--fs-100);
+    }
+
+    .productButton:hover {
+        background-color: var(--clr-neutral-900);
+        color: var(--clr-neutral-100);
+    }
 }
