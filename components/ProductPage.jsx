@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,6 +13,10 @@ import useCart from '../context/useCart';
 import useSidecart from '../context/useSidecart';
 
 const ProductPage = ({ product }) => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, [product?.id]);
+
     const { addToCart } = useCart();
     const { openSidecart } = useSidecart();
 

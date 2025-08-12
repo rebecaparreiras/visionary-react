@@ -167,4 +167,10 @@
         background-color: var(--clr-neutral-900);
         color: var(--clr-neutral-100);
     }
+
+    /* Product grid */
+    .title {
+        margin: 0 1rem 0.5rem 1rem;
+        font-size: var(--fs-200);
+    }
 }
